@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 
 // imported components
 import Nav from "./Nav";
+import MobileNav from './MobileNav';
 
 export default function Header() {
   return (
@@ -25,7 +26,7 @@ export default function Header() {
 
             {/* mobile nav */}
             <div className="md:hidden">
-                mobile nav
+                <MobileNav/>
             </div>
         </div>
     </header>
