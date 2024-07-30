@@ -21,4 +21,13 @@
     .cus_h3{
         @apply text-[20px] md:text-[28px] leading-[1.1] font-semibold;
     }
+
+    .text-outline {
+        -webkit-text-stroke: 1px #fff;
+    }
+    
+    .text-outline-hover{
+        -webkit-text-stroke: 1px #0d9488;
+        cursor: pointer;
+    }
 }
