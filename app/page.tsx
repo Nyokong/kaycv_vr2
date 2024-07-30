@@ -3,17 +3,21 @@ import Image from "next/image";
 {/* imports */}
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+
+{/* components */}
 import Socials from "@/components/Socials";
 import Mainphoto from "@/components/Mainphoto";
+import Stats from "@/components/Stats";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
-    <main>
+    <main className="md:mt-8 mt-4">
       <div className="container mx-auto h-full">
         <div className="flex flex-col md:flex-row items-center justify-between
         x:pt-8 xl:pb-24">
         {/* text */}
-        <div className="text-center md:text-left ">
+        <div className="text-center md:text-left order-2 md:order-none">
           <span className="text-xl">Junior Software Engineer</span>
           <h2>Hey its</h2>
           <h1 className="cus_h1">
@@ -43,13 +47,18 @@ export default function Home() {
               text-slate-900 text-base hover:bg-teal-600 hover:text-primary 
               hover:transition-all duration-500 bg-teal-200"/>
             </div>
-          </div>
+          </div> 
         </div>
-        <div>
+        <div className="order-1 md:order-none mb-8 md:mb-3">
           <Mainphoto/>
         </div>
         </div>
       </div>
+      {/* Stats */}
+      <Stats />
+
+      {/* Services */}
+      <Services/>
     </main>
   );
 }
