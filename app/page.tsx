@@ -35,10 +35,15 @@ export default function Home() {
               className="uppercase w-[200px] flex items-center gap-2 rounded-full
               bg-teal-300 hover:bg-teal-600 hover:text-white"
               >
-              <span className="text-slate-900 hover:text-white">Download CV</span>
-              <span className="text-slate-900 text-xl hover:text-white">
-                <FiDownload />
-              </span>
+              <a href="/assets/cv/cvofkhotsonyokong.pdf" 
+                download="callmekay_CV.pdf"
+                className="flex justify-center items-center"
+              >
+                <span className="text-slate-900 hover:text-white">Download CV</span>
+                <span className="text-slate-900 text-xl hover:text-white">
+                    <FiDownload />
+                </span>
+              </a>
             </Button>
             {/* socials */}
             <div className="mb-8 mt-6 md:mt-4 md:mb-3 md:ml-4 flex items-center"> 
