@@ -6,5 +6,19 @@
 @layer base{
     body{
         @apply font-primary bg-primary text-white leading-loose;
+
+        
+    }
+
+    .cus_h1{
+        @apply text-[48px] md:text-[80px] leading-[1.1] font-bold;
+    }
+
+    .cus_h2{
+        @apply text-[36px] md:text-[48px] leading-[1.1] semibold;
+    }
+
+    .cus_h3{
+        @apply text-[20px] md:text-[28px] leading-[1.1] font-semibold;
     }
 }
