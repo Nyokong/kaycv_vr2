@@ -3,6 +3,8 @@ import Image from "next/image";
 {/* imports */}
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import Socials from "@/components/Socials";
+import Mainphoto from "@/components/Mainphoto";
 
 export default function Home() {
   return (
@@ -22,24 +24,30 @@ export default function Home() {
           </p>
 
           {/* cv and socials */}
-          <div className="flex flex-row justify-center mt-3 mb-3 md:justify-start">
+          <div className="flex flex-col md:flex-row justify-center items-center mt-3 mb-3 md:justify-start">
             <Button
               variant="outline"
               size="lg" 
-              className="uppercase flex items-center gap-2"
+              className="uppercase w-[200px] flex items-center gap-2 rounded-full
+              bg-teal-300 hover:bg-teal-600 hover:text-white"
               >
-              <span className="text-slate-900">Download CV</span>
-              <span className="text-slate-900 text-xl">
+              <span className="text-slate-900 hover:text-white">Download CV</span>
+              <span className="text-slate-900 text-xl hover:text-white">
                 <FiDownload />
               </span>
             </Button>
             {/* socials */}
-            <div>
-              
+            <div className="mb-8 mt-6 md:mt-4 md:mb-3 md:ml-4 flex items-center"> 
+              <Socials containerStyles="flex gap-6" iconStyles="w-9 h-9 border 
+              border-teal-300 rounded-full flex justify-center items-center
+              text-slate-900 text-base hover:bg-teal-600 hover:text-primary 
+              hover:transition-all duration-500 bg-teal-200"/>
             </div>
           </div>
         </div>
-        <div>photo</div>
+        <div>
+          <Mainphoto/>
+        </div>
         </div>
       </div>
     </main>
