@@ -33,6 +33,10 @@ export default function Home() {
                 <FiDownload />
               </span>
             </Button>
+            {/* socials */}
+            <div>
+              
+            </div>
           </div>
         </div>
         <div>photo</div>
