@@ -2,6 +2,7 @@ import React from 'react'
 import Link from "next/link";
 import { Button } from "./ui/button";
 
+import { TbKayak } from "react-icons/tb";
 
 // imported components
 import Nav from "./Nav";
@@ -14,8 +15,12 @@ export default function Header() {
             items-center">
             {/** logo */}
             <Link href="/">
-                <h1 className='text-4xl font-semibold '>Kay
-                    <span className='text-accent'>.</span>
+                <h1 className='text-4xl font-semibold flex flex-row-reverse'>Kay
+                    <span className='text-white/60 w-[50px] h-[50px]
+                    rounded-full text-[30px] mx-2 justify-center
+                    text-center p-2'>
+                        <TbKayak/>
+                    </span>
                 </h1>
             </Link>
 

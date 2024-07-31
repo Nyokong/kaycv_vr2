@@ -135,7 +135,7 @@ function Cv() {
 
       <div className="container mx-auto">
         <Tabs
-          defaultValue="online-cv"
+          defaultValue="about-me"
           className="flex flex-col md:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto
