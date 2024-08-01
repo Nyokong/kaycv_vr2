@@ -1,15 +1,15 @@
 "use client";
 
 
-import React from 'react';
+import { FC, ReactNode } from 'react';
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-type PageTransitionProps = {
-  children: React.ReactNode;
-};
+interface PageTransitionProps {
+    children: ReactNode;
+  }
 
-const PageTransition = ({children}) => {
+const PageTransition: FC<PageTransitionProps> = ({children}) => {
     const pathname = usePathname();
     return (
         <AnimatePresence>
