@@ -109,7 +109,6 @@ export const Stats: React.FC = () => {
                         )}
                     </ul>
                 </ScrollArea>
-                
             </div>    
         </section>
     )
