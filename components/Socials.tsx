@@ -10,10 +10,10 @@ interface SocialsProps {
 }
 
 const socials = [
-    {icon: <FaGithub />, path: ''},
+    {icon: <FaGithub />, path: 'https://github.com/Nyokong'},
     {icon: <FaLinkedinIn />, path: ''},
-    {icon: <FaYoutube/>, path: ''},
-    {icon: <FaInstagram />, path: ''},
+    {icon: <FaYoutube/>, path: 'https://www.youtube.com/@callmekayxx/'},
+    {icon: <FaInstagram />, path: 'https://www.instagram.com/callmekaydoesart/'},
 ]
 
 
