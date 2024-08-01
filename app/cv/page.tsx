@@ -140,10 +140,46 @@ function Cv() {
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto
           md:mx-0 gap-6">
-            <TabsTrigger value="about-me">About Me</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{
+                scale: 0.8,
+                borderRadius: "100%"
+              }}
+            >
+              <TabsTrigger value="about-me">About Me</TabsTrigger>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{
+                scale: 0.8,
+                borderRadius: "100%"
+              }}
+            >
+              <TabsTrigger value="education">Education</TabsTrigger>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{
+                scale: 0.8,
+                borderRadius: "100%"
+              }}
+            >
+              <TabsTrigger value="skills">Skills</TabsTrigger>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{
+                scale: 0.8,
+                borderRadius: "100%"
+              }}
+            >
+              <TabsTrigger value="experience">Experience</TabsTrigger>
+            </motion.div>
+            
           </TabsList>
 
           {/*  tabs content */}
