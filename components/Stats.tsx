@@ -99,8 +99,8 @@ export const Stats: React.FC = () => {
                                 px-10 rounded-xl flex flex-col justify-center
                                 items-center md:items-start gap-1"
                                 >
-                                <p className="text-white/60">Commit Message: {commit.message}</p>
-                                <p className="tetx-xl max-w-[260px] min-h-[60px]
+                                <p className="text-white/60 flex-nowrap max-h-[40px]">Commit Message: {commit.message}</p>
+                                <p className="text-sm max-w-[260px] min-h-[50px]
                             text-center md:text-left">Author: {commit.author.name}</p>
                                 </li>
                             ))
@@ -108,8 +108,7 @@ export const Stats: React.FC = () => {
                             <p>No commits found.</p>
                         )}
                     </ul>
-                  </ScrollArea>
-                
+                </ScrollArea>
                 
             </div>    
         </section>
