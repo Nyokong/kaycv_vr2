@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+
 const info = [
   {
     icon: <FaPhoneAlt />,
@@ -26,11 +28,8 @@ const info = [
   },
 ];
 
-import { motion } from "framer-motion";
-
-const Contact = () => {
+const Contacts = () => {
   return (
-    
     <motion.div
       initial={{ opacity: 0 }}
       animate={{
@@ -42,48 +41,23 @@ const Contact = () => {
         },
       }}
 
-      className="py-6 md:py-2"
+      className="py-6 md:py-2 mt-10 mb-20"
     >
       <div className="container mx-auto">
+        <div className="container mx-auto mt-2 md:mt-5 mb-4 md:mb-8">
+            <h1 className="cus_h1">
+                    Contacts Info
+            </h1>
+        </div>
         <div className='flex flex-col md:flex-row gap-[30px]'>
           {/* form here */}
           <div className='md:w-[54%] order-2 md:order-none'>
-            <form action="" 
-              className='flex flex-col gap-6 p-10 bg-[#101014ad] rounded-none'
-            >
-              <h3 className='text-4xl text-teal-400'>Email Me Anytime!</h3>
-              <p className="text-white/60">
-                Please reach out to me anytime you can!
-              </p>
-              {/* inputs */}
-              <div className='grid grid-cold-1 md:grid-cols-2 gap-6'>
-                <Input type="firstname" placeholder='Firstname' />
-                <Input type="lastname" placeholder='Lastname' />
-                <Input type="email" placeholder='Email Address' />
-                <Input type="phone" placeholder='Phone Number' />
-              </div>
-              <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="select a serveice"/>
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel>Select a Service</SelectLabel>
-                    <SelectItem value="wb">Web Development</SelectItem>
-                    <SelectItem value="am">Animation</SelectItem>
-                    <SelectItem value="il">Illustration</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
-              {/* textarea */}
-              <Textarea className='h-[200px]' placeholder='Any comments you might like to add?'/>
-              {/* button */}
-              <div className='w-full flex justify-center items-center'>
-                <Button size="lg" className='w-40'>Send</Button>
-              </div>
-            </form>
+            <div className='bg-[#141316] h-[300px] flex-nowrap hidden md:block w-full'>
+                <h1 className='md:cus_h1 cus_h3 '>
+                    Please reach out to me here
+                </h1>
+            </div>
           </div>
-
           {/* infor */}
           <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:m-0'>
             {/* My information tab */}
@@ -113,4 +87,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contacts

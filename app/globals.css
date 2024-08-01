@@ -15,7 +15,7 @@
     }
 
     .cus_h2{
-        @apply text-[36px] md:text-[48px] leading-[1.1] semibold;
+        @apply text-[36px] md:text-[48px] leading-[1.1] font-semibold;
     }
 
     .cus_h3{

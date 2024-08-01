@@ -9,6 +9,7 @@ import Socials from "@/components/Socials";
 import Mainphoto from "@/components/Mainphoto";
 import Stats from "@/components/Stats";
 import Services from "@/components/Services";
+import Contacts from "@/components/Contacts";
 
 export default function Home() {
   return (
@@ -64,6 +65,9 @@ export default function Home() {
 
       {/* Services */}
       <Services/>
+      
+      {/* bottom of the page */}
+      <Contacts/>
     </main>
   );
 }
