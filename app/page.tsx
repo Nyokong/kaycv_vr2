@@ -36,7 +36,7 @@ export default function Home() {
               className="uppercase w-[200px] flex items-center gap-2 rounded-full
               bg-teal-300 hover:bg-teal-600 hover:text-white"
               >
-              <a href="/assets/cv/cvofkhotsonyokong.pdf" 
+              <a href="/assets/cv/CVofKhotso Nyokong.pdf" 
                 download="callmekay_CV.pdf"
                 className="flex justify-center items-center"
               >
