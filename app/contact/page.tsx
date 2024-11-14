@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
+import Email from '@/components/Email';
+
+
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -27,6 +30,7 @@ const info = [
 ];
 
 import { motion } from "framer-motion";
+
 
 const Contact = () => {
   return (
@@ -83,6 +87,9 @@ const Contact = () => {
               </div>
             </form>
           </div>
+
+
+      <Email />
 
           {/* infor */}
           <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:m-0'>

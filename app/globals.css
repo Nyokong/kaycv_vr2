@@ -6,8 +6,6 @@
 @layer base{
     body{
         @apply font-primary bg-primary text-white leading-loose;
-
-        
     }
 
     .cus_h1{
